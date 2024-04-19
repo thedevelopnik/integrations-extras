@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  teleport:
+    image: public.ecr.aws/gravitational/teleport-distroless:15.2.2
+    ports:
+      - "3000:3000"
+    volumes:
+    - "./fixtures/docker-config:/etc/teleport"
+    - "/tmp/teleport-integration-test-data:/var/lib/teleport"
+    hostname: localhost
