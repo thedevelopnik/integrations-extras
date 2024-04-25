@@ -15,10 +15,10 @@
       "Supported OS::Linux",
       "Supported OS::Windows",
       "Supported OS::macOS",
-      "Category::",
+      "Category::Security",
       "Offering::",
-      "Queried Data Type::",
-      "Submitted Data Type::"
+      "Queried Data Type::Metrics",
+      "Submitted Data Type::Metrics"
     ]
   },
   "assets": {
