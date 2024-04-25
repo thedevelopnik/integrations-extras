@@ -1,0 +1,801 @@
+# HELP audit_failed_disk_monitoring Number of times disk monitoring failed.
+# TYPE audit_failed_disk_monitoring counter
+audit_failed_disk_monitoring 0
+# HELP audit_failed_emit_events Number of times emitting audit event failed.
+# TYPE audit_failed_emit_events counter
+audit_failed_emit_events 0
+# HELP audit_percentage_disk_space_used Percentage disk space used.
+# TYPE audit_percentage_disk_space_used gauge
+audit_percentage_disk_space_used 0
+# HELP audit_server_open_files Number of open audit files
+# TYPE audit_server_open_files gauge
+audit_server_open_files 0
+# HELP auth_generate_requests Number of current generate requests for server keys
+# TYPE auth_generate_requests gauge
+auth_generate_requests 0
+# HELP auth_generate_requests_throttled_total Number of throttled requests to generate new server keys
+# TYPE auth_generate_requests_throttled_total counter
+auth_generate_requests_throttled_total 0
+# HELP auth_generate_requests_total Number of requests to generate new server keys
+# TYPE auth_generate_requests_total counter
+auth_generate_requests_total 0
+# HELP auth_generate_seconds Latency for generate requests for server keys
+# TYPE auth_generate_seconds histogram
+auth_generate_seconds_bucket{le="0.001"} 0
+auth_generate_seconds_bucket{le="0.002"} 0
+auth_generate_seconds_bucket{le="0.004"} 0
+auth_generate_seconds_bucket{le="0.008"} 0
+auth_generate_seconds_bucket{le="0.016"} 0
+auth_generate_seconds_bucket{le="0.032"} 0
+auth_generate_seconds_bucket{le="0.064"} 0
+auth_generate_seconds_bucket{le="0.128"} 0
+auth_generate_seconds_bucket{le="0.256"} 0
+auth_generate_seconds_bucket{le="0.512"} 0
+auth_generate_seconds_bucket{le="1.024"} 0
+auth_generate_seconds_bucket{le="2.048"} 0
+auth_generate_seconds_bucket{le="4.096"} 0
+auth_generate_seconds_bucket{le="8.192"} 0
+auth_generate_seconds_bucket{le="16.384"} 0
+auth_generate_seconds_bucket{le="32.768"} 0
+auth_generate_seconds_bucket{le="+Inf"} 0
+auth_generate_seconds_sum 0
+auth_generate_seconds_count 0
+# HELP backend_batch_read_requests_total Number of read requests to the backend
+# TYPE backend_batch_read_requests_total counter
+backend_batch_read_requests_total{component="backend"} 61
+backend_batch_read_requests_total{component="cache"} 57
+# HELP backend_batch_read_seconds Latency for batch read operations
+# TYPE backend_batch_read_seconds histogram
+backend_batch_read_seconds_bucket{component="backend",le="0.001"} 54
+backend_batch_read_seconds_bucket{component="backend",le="0.002"} 61
+backend_batch_read_seconds_bucket{component="backend",le="0.004"} 61
+backend_batch_read_seconds_bucket{component="backend",le="0.008"} 61
+backend_batch_read_seconds_bucket{component="backend",le="0.016"} 61
+backend_batch_read_seconds_bucket{component="backend",le="0.032"} 61
+backend_batch_read_seconds_bucket{component="backend",le="0.064"} 61
+backend_batch_read_seconds_bucket{component="backend",le="0.128"} 61
+backend_batch_read_seconds_bucket{component="backend",le="0.256"} 61
+backend_batch_read_seconds_bucket{component="backend",le="0.512"} 61
+backend_batch_read_seconds_bucket{component="backend",le="1.024"} 61
+backend_batch_read_seconds_bucket{component="backend",le="2.048"} 61
+backend_batch_read_seconds_bucket{component="backend",le="4.096"} 61
+backend_batch_read_seconds_bucket{component="backend",le="8.192"} 61
+backend_batch_read_seconds_bucket{component="backend",le="16.384"} 61
+backend_batch_read_seconds_bucket{component="backend",le="32.768"} 61
+backend_batch_read_seconds_bucket{component="backend",le="+Inf"} 61
+backend_batch_read_seconds_sum{component="backend"} 0.028812418999999992
+backend_batch_read_seconds_count{component="backend"} 61
+backend_batch_read_seconds_bucket{component="cache",le="0.001"} 57
+backend_batch_read_seconds_bucket{component="cache",le="0.002"} 57
+backend_batch_read_seconds_bucket{component="cache",le="0.004"} 57
+backend_batch_read_seconds_bucket{component="cache",le="0.008"} 57
+backend_batch_read_seconds_bucket{component="cache",le="0.016"} 57
+backend_batch_read_seconds_bucket{component="cache",le="0.032"} 57
+backend_batch_read_seconds_bucket{component="cache",le="0.064"} 57
+backend_batch_read_seconds_bucket{component="cache",le="0.128"} 57
+backend_batch_read_seconds_bucket{component="cache",le="0.256"} 57
+backend_batch_read_seconds_bucket{component="cache",le="0.512"} 57
+backend_batch_read_seconds_bucket{component="cache",le="1.024"} 57
+backend_batch_read_seconds_bucket{component="cache",le="2.048"} 57
+backend_batch_read_seconds_bucket{component="cache",le="4.096"} 57
+backend_batch_read_seconds_bucket{component="cache",le="8.192"} 57
+backend_batch_read_seconds_bucket{component="cache",le="16.384"} 57
+backend_batch_read_seconds_bucket{component="cache",le="32.768"} 57
+backend_batch_read_seconds_bucket{component="cache",le="+Inf"} 57
+backend_batch_read_seconds_sum{component="cache"} 7.904100000000003e-05
+backend_batch_read_seconds_count{component="cache"} 57
+# HELP backend_batch_write_requests_total Number of batch write requests to the backend
+# TYPE backend_batch_write_requests_total counter
+backend_batch_write_requests_total{component="cache"} 90
+# HELP backend_batch_write_seconds Latency for backend batch write operations
+# TYPE backend_batch_write_seconds histogram
+backend_batch_write_seconds_bucket{component="cache",le="0.001"} 90
+backend_batch_write_seconds_bucket{component="cache",le="0.002"} 90
+backend_batch_write_seconds_bucket{component="cache",le="0.004"} 90
+backend_batch_write_seconds_bucket{component="cache",le="0.008"} 90
+backend_batch_write_seconds_bucket{component="cache",le="0.016"} 90
+backend_batch_write_seconds_bucket{component="cache",le="0.032"} 90
+backend_batch_write_seconds_bucket{component="cache",le="0.064"} 90
+backend_batch_write_seconds_bucket{component="cache",le="0.128"} 90
+backend_batch_write_seconds_bucket{component="cache",le="0.256"} 90
+backend_batch_write_seconds_bucket{component="cache",le="0.512"} 90
+backend_batch_write_seconds_bucket{component="cache",le="1.024"} 90
+backend_batch_write_seconds_bucket{component="cache",le="2.048"} 90
+backend_batch_write_seconds_bucket{component="cache",le="4.096"} 90
+backend_batch_write_seconds_bucket{component="cache",le="8.192"} 90
+backend_batch_write_seconds_bucket{component="cache",le="16.384"} 90
+backend_batch_write_seconds_bucket{component="cache",le="32.768"} 90
+backend_batch_write_seconds_bucket{component="cache",le="+Inf"} 90
+backend_batch_write_seconds_sum{component="cache"} 4.6834999999999995e-05
+backend_batch_write_seconds_count{component="cache"} 90
+# HELP backend_read_requests_total Number of read requests to the backend
+# TYPE backend_read_requests_total counter
+backend_read_requests_total{component="backend"} 31
+backend_read_requests_total{component="cache"} 147
+# HELP backend_read_seconds Latency for read operations
+# TYPE backend_read_seconds histogram
+backend_read_seconds_bucket{component="backend",le="0.001"} 22
+backend_read_seconds_bucket{component="backend",le="0.002"} 27
+backend_read_seconds_bucket{component="backend",le="0.004"} 30
+backend_read_seconds_bucket{component="backend",le="0.008"} 31
+backend_read_seconds_bucket{component="backend",le="0.016"} 31
+backend_read_seconds_bucket{component="backend",le="0.032"} 31
+backend_read_seconds_bucket{component="backend",le="0.064"} 31
+backend_read_seconds_bucket{component="backend",le="0.128"} 31
+backend_read_seconds_bucket{component="backend",le="0.256"} 31
+backend_read_seconds_bucket{component="backend",le="0.512"} 31
+backend_read_seconds_bucket{component="backend",le="1.024"} 31
+backend_read_seconds_bucket{component="backend",le="2.048"} 31
+backend_read_seconds_bucket{component="backend",le="4.096"} 31
+backend_read_seconds_bucket{component="backend",le="8.192"} 31
+backend_read_seconds_bucket{component="backend",le="16.384"} 31
+backend_read_seconds_bucket{component="backend",le="32.768"} 31
+backend_read_seconds_bucket{component="backend",le="+Inf"} 31
+backend_read_seconds_sum{component="backend"} 0.027163256
+backend_read_seconds_count{component="backend"} 31
+backend_read_seconds_bucket{component="cache",le="0.001"} 147
+backend_read_seconds_bucket{component="cache",le="0.002"} 147
+backend_read_seconds_bucket{component="cache",le="0.004"} 147
+backend_read_seconds_bucket{component="cache",le="0.008"} 147
+backend_read_seconds_bucket{component="cache",le="0.016"} 147
+backend_read_seconds_bucket{component="cache",le="0.032"} 147
+backend_read_seconds_bucket{component="cache",le="0.064"} 147
+backend_read_seconds_bucket{component="cache",le="0.128"} 147
+backend_read_seconds_bucket{component="cache",le="0.256"} 147
+backend_read_seconds_bucket{component="cache",le="0.512"} 147
+backend_read_seconds_bucket{component="cache",le="1.024"} 147
+backend_read_seconds_bucket{component="cache",le="2.048"} 147
+backend_read_seconds_bucket{component="cache",le="4.096"} 147
+backend_read_seconds_bucket{component="cache",le="8.192"} 147
+backend_read_seconds_bucket{component="cache",le="16.384"} 147
+backend_read_seconds_bucket{component="cache",le="32.768"} 147
+backend_read_seconds_bucket{component="cache",le="+Inf"} 147
+backend_read_seconds_sum{component="cache"} 0.00034559
+backend_read_seconds_count{component="cache"} 147
+# HELP backend_requests Number of requests to the backend (reads, writes, and keepalives)
+# TYPE backend_requests counter
+backend_requests{component="backend",range="false",req=".locks"} 4
+backend_requests{component="backend",range="false",req="/authentication/preference"} 3
+backend_requests{component="backend",range="false",req="/authorities/db"} 1
+backend_requests{component="backend",range="false",req="/authorities/db_client"} 2
+backend_requests{component="backend",range="false",req="/authorities/host"} 2
+backend_requests{component="backend",range="false",req="/authorities/jwt"} 1
+backend_requests{component="backend",range="false",req="/authorities/oidc_idp"} 1
+backend_requests{component="backend",range="false",req="/authorities/openssh"} 1
+backend_requests{component="backend",range="false",req="/authorities/saml_idp"} 1
+backend_requests{component="backend",range="false",req="/authorities/spiffe"} 1
+backend_requests{component="backend",range="false",req="/authorities/user"} 1
+backend_requests{component="backend",range="false",req="/authservers"} 1
+backend_requests{component="backend",range="false",req="/cluster-alerts/ca-key-types"} 1
+backend_requests{component="backend",range="false",req="/cluster_configuration/audit"} 2
+backend_requests{component="backend",range="false",req="/cluster_configuration/name"} 4
+backend_requests{component="backend",range="false",req="/cluster_configuration/networking"} 3
+backend_requests{component="backend",range="false",req="/cluster_configuration/session_recording"} 3
+backend_requests{component="backend",range="false",req="/cluster_configuration/static_tokens"} 2
+backend_requests{component="backend",range="false",req="/cluster_configuration/ui"} 1
+backend_requests{component="backend",range="false",req="/external_audit_storage"} 1
+backend_requests{component="backend",range="false",req="/migrations"} 1
+backend_requests{component="backend",range="false",req="/namespaces/default"} 1
+backend_requests{component="backend",range="false",req="/proxies"} 1
+backend_requests{component="backend",range="false",req="/restrictions"} 1
+backend_requests{component="backend",range="false",req="/roles/access"} 2
+backend_requests{component="backend",range="false",req="/roles/auditor"} 2
+backend_requests{component="backend",range="false",req="/roles/editor"} 2
+backend_requests{component="backend",range="true",req="/access_list"} 1
+backend_requests{component="backend",range="true",req="/access_list_member"} 1
+backend_requests{component="backend",range="true",req="/access_list_review"} 1
+backend_requests{component="backend",range="true",req="/access_requests"} 2
+backend_requests{component="backend",range="true",req="/appServers/default"} 1
+backend_requests{component="backend",range="true",req="/applications"} 1
+backend_requests{component="backend",range="true",req="/apps/sessions"} 1
+backend_requests{component="backend",range="true",req="/authorities/db"} 1
+backend_requests{component="backend",range="true",req="/authorities/db_client"} 1
+backend_requests{component="backend",range="true",req="/authorities/host"} 2
+backend_requests{component="backend",range="true",req="/authorities/jwt"} 1
+backend_requests{component="backend",range="true",req="/authorities/oidc_idp"} 1
+backend_requests{component="backend",range="true",req="/authorities/openssh"} 1
+backend_requests{component="backend",range="true",req="/authorities/saml_idp"} 1
+backend_requests{component="backend",range="true",req="/authorities/spiffe"} 1
+backend_requests{component="backend",range="true",req="/authorities/user"} 1
+backend_requests{component="backend",range="true",req="/authservers"} 1
+backend_requests{component="backend",range="true",req="/cluster_configuration/scripts"} 1
+backend_requests{component="backend",range="true",req="/databaseObjectImportRulePrefix"} 1
+backend_requests{component="backend",range="true",req="/databaseServers/default"} 1
+backend_requests{component="backend",range="true",req="/databaseService"} 1
+backend_requests{component="backend",range="true",req="/db"} 1
+backend_requests{component="backend",range="true",req="/discovery_config"} 1
+backend_requests{component="backend",range="true",req="/headless_authentication"} 1
+backend_requests{component="backend",range="true",req="/integrations"} 1
+backend_requests{component="backend",range="true",req="/k8s_waiting_container"} 1
+backend_requests{component="backend",range="true",req="/kubeServers"} 1
+backend_requests{component="backend",range="true",req="/kubernetes"} 1
+backend_requests{component="backend",range="true",req="/locks"} 2
+backend_requests{component="backend",range="true",req="/namespaces"} 1
+backend_requests{component="backend",range="true",req="/nodes/default"} 1
+backend_requests{component="backend",range="true",req="/notifications/global"} 1
+backend_requests{component="backend",range="true",req="/notifications/user"} 1
+backend_requests{component="backend",range="true",req="/okta_assignment"} 1
+backend_requests{component="backend",range="true",req="/okta_import_rule"} 1
+backend_requests{component="backend",range="true",req="/proxies"} 1
+backend_requests{component="backend",range="true",req="/remoteClusters"} 2
+backend_requests{component="backend",range="true",req="/reverseTunnels"} 1
+backend_requests{component="backend",range="true",req="/roles"} 1
+backend_requests{component="backend",range="true",req="/saml_idp/sessions"} 2
+backend_requests{component="backend",range="true",req="/saml_idp_service_provider"} 1
+backend_requests{component="backend",range="true",req="/snowflake/sessions"} 2
+backend_requests{component="backend",range="true",req="/tokens"} 1
+backend_requests{component="backend",range="true",req="/tunnelConnections"} 1
+backend_requests{component="backend",range="true",req="/user_group"} 1
+backend_requests{component="backend",range="true",req="/user_login_state"} 1
+backend_requests{component="backend",range="true",req="/web/sessions"} 2
+backend_requests{component="backend",range="true",req="/web/tokens"} 2
+backend_requests{component="backend",range="true",req="/web/users"} 3
+backend_requests{component="backend",range="true",req="/windowsDesktop"} 1
+backend_requests{component="backend",range="true",req="/windowsDesktopServices"} 1
+backend_requests{component="cache",range="false",req="/authentication/preference"} 55
+backend_requests{component="cache",range="false",req="/authorities/db"} 4
+backend_requests{component="cache",range="false",req="/authorities/db_client"} 4
+backend_requests{component="cache",range="false",req="/authorities/host"} 9
+backend_requests{component="cache",range="false",req="/authorities/jwt"} 4
+backend_requests{component="cache",range="false",req="/authorities/oidc_idp"} 4
+backend_requests{component="cache",range="false",req="/authorities/openssh"} 4
+backend_requests{component="cache",range="false",req="/authorities/saml_idp"} 4
+backend_requests{component="cache",range="false",req="/authorities/spiffe"} 4
+backend_requests{component="cache",range="false",req="/authorities/user"} 8
+backend_requests{component="cache",range="false",req="/authservers"} 4
+backend_requests{component="cache",range="false",req="/cluster_configuration/audit"} 5
+backend_requests{component="cache",range="false",req="/cluster_configuration/name"} 13
+backend_requests{component="cache",range="false",req="/cluster_configuration/networking"} 8
+backend_requests{component="cache",range="false",req="/cluster_configuration/scripts"} 2
+backend_requests{component="cache",range="false",req="/cluster_configuration/session_recording"} 56
+backend_requests{component="cache",range="false",req="/cluster_configuration/static_tokens"} 2
+backend_requests{component="cache",range="false",req="/cluster_configuration/ui"} 3
+backend_requests{component="cache",range="false",req="/namespaces/default"} 4
+backend_requests{component="cache",range="false",req="/proxies"} 4
+backend_requests{component="cache",range="false",req="/restrictions"} 1
+backend_requests{component="cache",range="false",req="/roles/access"} 2
+backend_requests{component="cache",range="false",req="/roles/auditor"} 2
+backend_requests{component="cache",range="false",req="/roles/editor"} 2
+backend_requests{component="cache",range="true",req="/access_list"} 1
+backend_requests{component="cache",range="true",req="/access_list_member"} 1
+backend_requests{component="cache",range="true",req="/access_list_review"} 1
+backend_requests{component="cache",range="true",req="/access_requests"} 1
+backend_requests{component="cache",range="true",req="/appServers/default"} 4
+backend_requests{component="cache",range="true",req="/applications"} 3
+backend_requests{component="cache",range="true",req="/apps/sessions"} 3
+backend_requests{component="cache",range="true",req="/authorities/db"} 4
+backend_requests{component="cache",range="true",req="/authorities/db_client"} 3
+backend_requests{component="cache",range="true",req="/authorities/host"} 4
+backend_requests{component="cache",range="true",req="/authorities/jwt"} 3
+backend_requests{component="cache",range="true",req="/authorities/oidc_idp"} 3
+backend_requests{component="cache",range="true",req="/authorities/openssh"} 4
+backend_requests{component="cache",range="true",req="/authorities/saml_idp"} 3
+backend_requests{component="cache",range="true",req="/authorities/spiffe"} 3
+backend_requests{component="cache",range="true",req="/authorities/user"} 4
+backend_requests{component="cache",range="true",req="/authservers"} 3
+backend_requests{component="cache",range="true",req="/cluster_configuration/scripts"} 3
+backend_requests{component="cache",range="true",req="/databaseServers/default"} 4
+backend_requests{component="cache",range="true",req="/databaseService"} 3
+backend_requests{component="cache",range="true",req="/db"} 3
+backend_requests{component="cache",range="true",req="/discovery_config"} 1
+backend_requests{component="cache",range="true",req="/integrations"} 3
+backend_requests{component="cache",range="true",req="/k8s_waiting_container"} 3
+backend_requests{component="cache",range="true",req="/kubeServers"} 5
+backend_requests{component="cache",range="true",req="/kubernetes"} 3
+backend_requests{component="cache",range="true",req="/locks"} 2
+backend_requests{component="cache",range="true",req="/namespaces"} 3
+backend_requests{component="cache",range="true",req="/nodes/default"} 6
+backend_requests{component="cache",range="true",req="/okta_assignment"} 1
+backend_requests{component="cache",range="true",req="/okta_import_rule"} 1
+backend_requests{component="cache",range="true",req="/proxies"} 6
+backend_requests{component="cache",range="true",req="/remoteClusters"} 2
+backend_requests{component="cache",range="true",req="/reverseTunnels"} 4
+backend_requests{component="cache",range="true",req="/roles"} 3
+backend_requests{component="cache",range="true",req="/saml_idp/sessions"} 2
+backend_requests{component="cache",range="true",req="/saml_idp_service_provider"} 4
+backend_requests{component="cache",range="true",req="/security_report/audit_query"} 2
+backend_requests{component="cache",range="true",req="/security_report/report"} 6
+backend_requests{component="cache",range="true",req="/security_report/state"} 4
+backend_requests{component="cache",range="true",req="/snowflake/sessions"} 2
+backend_requests{component="cache",range="true",req="/tokens"} 1
+backend_requests{component="cache",range="true",req="/tunnelConnections"} 4
+backend_requests{component="cache",range="true",req="/user_group"} 3
+backend_requests{component="cache",range="true",req="/user_login_state"} 1
+backend_requests{component="cache",range="true",req="/web/sessions"} 2
+backend_requests{component="cache",range="true",req="/web/tokens"} 2
+backend_requests{component="cache",range="true",req="/web/users"} 3
+backend_requests{component="cache",range="true",req="/windowsDesktop"} 4
+backend_requests{component="cache",range="true",req="/windowsDesktopServices"} 3
+# HELP backend_watcher_queues_total Watcher queue sizes
+# TYPE backend_watcher_queues_total gauge
+backend_watcher_queues_total{component="auth:cache"} 6
+# HELP backend_watchers_total Number of active backend watchers
+# TYPE backend_watchers_total gauge
+backend_watchers_total{component="backend"} 7
+# HELP backend_write_requests_failed_total Number of failed write requests to the backend
+# TYPE backend_write_requests_failed_total counter
+backend_write_requests_failed_total{component="backend"} 5
+backend_write_requests_failed_total{component="cache"} 3
+# HELP backend_write_requests_total Number of write requests to the backend
+# TYPE backend_write_requests_total counter
+backend_write_requests_total{component="backend"} 15
+backend_write_requests_total{component="cache"} 61
+# HELP backend_write_seconds Latency for backend write operations
+# TYPE backend_write_seconds histogram
+backend_write_seconds_bucket{component="backend",le="0.001"} 2
+backend_write_seconds_bucket{component="backend",le="0.002"} 8
+backend_write_seconds_bucket{component="backend",le="0.004"} 10
+backend_write_seconds_bucket{component="backend",le="0.008"} 14
+backend_write_seconds_bucket{component="backend",le="0.016"} 15
+backend_write_seconds_bucket{component="backend",le="0.032"} 15
+backend_write_seconds_bucket{component="backend",le="0.064"} 15
+backend_write_seconds_bucket{component="backend",le="0.128"} 15
+backend_write_seconds_bucket{component="backend",le="0.256"} 15
+backend_write_seconds_bucket{component="backend",le="0.512"} 15
+backend_write_seconds_bucket{component="backend",le="1.024"} 15
+backend_write_seconds_bucket{component="backend",le="2.048"} 15
+backend_write_seconds_bucket{component="backend",le="4.096"} 15
+backend_write_seconds_bucket{component="backend",le="8.192"} 15
+backend_write_seconds_bucket{component="backend",le="16.384"} 15
+backend_write_seconds_bucket{component="backend",le="32.768"} 15
+backend_write_seconds_bucket{component="backend",le="+Inf"} 15
+backend_write_seconds_sum{component="backend"} 0.046470810999999994
+backend_write_seconds_count{component="backend"} 15
+backend_write_seconds_bucket{component="cache",le="0.001"} 61
+backend_write_seconds_bucket{component="cache",le="0.002"} 61
+backend_write_seconds_bucket{component="cache",le="0.004"} 61
+backend_write_seconds_bucket{component="cache",le="0.008"} 61
+backend_write_seconds_bucket{component="cache",le="0.016"} 61
+backend_write_seconds_bucket{component="cache",le="0.032"} 61
+backend_write_seconds_bucket{component="cache",le="0.064"} 61
+backend_write_seconds_bucket{component="cache",le="0.128"} 61
+backend_write_seconds_bucket{component="cache",le="0.256"} 61
+backend_write_seconds_bucket{component="cache",le="0.512"} 61
+backend_write_seconds_bucket{component="cache",le="1.024"} 61
+backend_write_seconds_bucket{component="cache",le="2.048"} 61
+backend_write_seconds_bucket{component="cache",le="4.096"} 61
+backend_write_seconds_bucket{component="cache",le="8.192"} 61
+backend_write_seconds_bucket{component="cache",le="16.384"} 61
+backend_write_seconds_bucket{component="cache",le="32.768"} 61
+backend_write_seconds_bucket{component="cache",le="+Inf"} 61
+backend_write_seconds_sum{component="cache"} 9.1749e-05
+backend_write_seconds_count{component="cache"} 61
+# HELP certificate_mismatch_total Number of times there was a certificate mismatch
+# TYPE certificate_mismatch_total counter
+certificate_mismatch_total 0
+# HELP cluster_name_not_found_total Number of times a cluster name was not found
+# TYPE cluster_name_not_found_total counter
+cluster_name_not_found_total 0
+# HELP failed_connect_to_node_attempts_total Number of failed SSH connection attempts to a node. Use with `teleport_connect_to_node_attempts_total` to get the failure rate.
+# TYPE failed_connect_to_node_attempts_total counter
+failed_connect_to_node_attempts_total 0
+# HELP failed_login_attempts_total Number of times there was a failed login
+# TYPE failed_login_attempts_total counter
+failed_login_attempts_total 0
+# HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 1.8166e-05
+go_gc_duration_seconds{quantile="0.25"} 4.2457e-05
+go_gc_duration_seconds{quantile="0.5"} 4.2834e-05
+go_gc_duration_seconds{quantile="0.75"} 5.4542e-05
+go_gc_duration_seconds{quantile="1"} 6.1208e-05
+go_gc_duration_seconds_sum 0.000347455
+go_gc_duration_seconds_count 8
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 142
+# HELP go_info Information about the Go environment.
+# TYPE go_info gauge
+go_info{version="go1.21.9"} 1
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 3.8706016e+07
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# TYPE go_memstats_alloc_bytes_total counter
+go_memstats_alloc_bytes_total 1.55644928e+08
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+go_memstats_buck_hash_sys_bytes 1.48582e+06
+# HELP go_memstats_frees_total Total number of frees.
+# TYPE go_memstats_frees_total counter
+go_memstats_frees_total 473449
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata.
+# TYPE go_memstats_gc_sys_bytes gauge
+go_memstats_gc_sys_bytes 6.407936e+06
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and still in use.
+# TYPE go_memstats_heap_alloc_bytes gauge
+go_memstats_heap_alloc_bytes 3.8706016e+07
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used.
+# TYPE go_memstats_heap_idle_bytes gauge
+go_memstats_heap_idle_bytes 3.469312e+07
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use.
+# TYPE go_memstats_heap_inuse_bytes gauge
+go_memstats_heap_inuse_bytes 4.706304e+07
+# HELP go_memstats_heap_objects Number of allocated objects.
+# TYPE go_memstats_heap_objects gauge
+go_memstats_heap_objects 99124
+# HELP go_memstats_heap_released_bytes Number of heap bytes released to OS.
+# TYPE go_memstats_heap_released_bytes gauge
+go_memstats_heap_released_bytes 4.841472e+06
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system.
+# TYPE go_memstats_heap_sys_bytes gauge
+go_memstats_heap_sys_bytes 8.175616e+07
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+go_memstats_last_gc_time_seconds 1.7134698396286573e+09
+# HELP go_memstats_lookups_total Total number of pointer lookups.
+# TYPE go_memstats_lookups_total counter
+go_memstats_lookups_total 0
+# HELP go_memstats_mallocs_total Total number of mallocs.
+# TYPE go_memstats_mallocs_total counter
+go_memstats_mallocs_total 572573
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+go_memstats_mcache_inuse_bytes 14400
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system.
+# TYPE go_memstats_mcache_sys_bytes gauge
+go_memstats_mcache_sys_bytes 15600
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+go_memstats_mspan_inuse_bytes 565824
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system.
+# TYPE go_memstats_mspan_sys_bytes gauge
+go_memstats_mspan_sys_bytes 1.026648e+06
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place.
+# TYPE go_memstats_next_gc_bytes gauge
+go_memstats_next_gc_bytes 6.9072792e+07
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations.
+# TYPE go_memstats_other_sys_bytes gauge
+go_memstats_other_sys_bytes 2.459348e+06
+# HELP go_memstats_stack_inuse_bytes Number of bytes in use by the stack allocator.
+# TYPE go_memstats_stack_inuse_bytes gauge
+go_memstats_stack_inuse_bytes 2.12992e+06
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator.
+# TYPE go_memstats_stack_sys_bytes gauge
+go_memstats_stack_sys_bytes 2.12992e+06
+# HELP go_memstats_sys_bytes Number of bytes obtained from system.
+# TYPE go_memstats_sys_bytes gauge
+go_memstats_sys_bytes 9.5281432e+07
+# HELP go_threads Number of OS threads created.
+# TYPE go_threads gauge
+go_threads 17
+# HELP grpc_server_handled_total Total number of RPCs completed on the server, regardless of success or failure.
+# TYPE grpc_server_handled_total counter
+grpc_server_handled_total{grpc_code="NotFound",grpc_method="GetUIConfig",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetApps",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetAuthPreference",grpc_service="teleport.clusterconfig.v1.ClusterConfigService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetCertAuthorities",grpc_service="teleport.trust.v1.TrustService",grpc_type="unary",server="teleport-auth"} 9
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetClusterAuditConfig",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetClusterNetworkingConfig",grpc_service="teleport.clusterconfig.v1.ClusterConfigService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetDatabases",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetInstallers",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetKubernetesClusters",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetLocks",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetSessionRecordingConfig",grpc_service="teleport.clusterconfig.v1.ClusterConfigService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetSnowflakeSessions",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetWebSessions",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetWebTokens",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetWindowsDesktopServices",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetWindowsDesktops",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="ListAppSessions",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="ListIntegrations",grpc_service="teleport.integration.v1.IntegrationService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="ListKubernetesWaitingContainers",grpc_service="teleport.kubewaitingcontainer.v1.KubeWaitingContainersService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="ListResources",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 5
+grpc_server_handled_total{grpc_code="OK",grpc_method="ListRoles",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="ListSAMLIdPServiceProviders",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="ListSAMLIdPSessions",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="ListUserGroups",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="ListUsers",grpc_service="teleport.users.v1.UsersService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="Ping",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 2
+# HELP grpc_server_msg_received_total Total number of RPC stream messages received on the server.
+# TYPE grpc_server_msg_received_total counter
+grpc_server_msg_received_total{grpc_method="GetApps",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="GetAuthPreference",grpc_service="teleport.clusterconfig.v1.ClusterConfigService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="GetCertAuthorities",grpc_service="teleport.trust.v1.TrustService",grpc_type="unary",server="teleport-auth"} 9
+grpc_server_msg_received_total{grpc_method="GetClusterAuditConfig",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="GetClusterNetworkingConfig",grpc_service="teleport.clusterconfig.v1.ClusterConfigService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="GetDatabases",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="GetInstallers",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="GetKubernetesClusters",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="GetLocks",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="GetSessionRecordingConfig",grpc_service="teleport.clusterconfig.v1.ClusterConfigService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="GetSnowflakeSessions",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="GetUIConfig",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="GetWebSessions",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="GetWebTokens",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="GetWindowsDesktopServices",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="GetWindowsDesktops",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="ListAppSessions",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="ListIntegrations",grpc_service="teleport.integration.v1.IntegrationService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="ListKubernetesWaitingContainers",grpc_service="teleport.kubewaitingcontainer.v1.KubeWaitingContainersService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="ListResources",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 5
+grpc_server_msg_received_total{grpc_method="ListRoles",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="ListSAMLIdPServiceProviders",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="ListSAMLIdPSessions",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="ListUserGroups",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="ListUsers",grpc_service="teleport.users.v1.UsersService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_received_total{grpc_method="Ping",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 2
+grpc_server_msg_received_total{grpc_method="WatchEvents",grpc_service="proto.AuthService",grpc_type="server_stream",server="teleport-auth"} 2
+# HELP grpc_server_msg_sent_total Total number of gRPC stream messages sent by the server.
+# TYPE grpc_server_msg_sent_total counter
+grpc_server_msg_sent_total{grpc_method="GetApps",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="GetAuthPreference",grpc_service="teleport.clusterconfig.v1.ClusterConfigService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="GetCertAuthorities",grpc_service="teleport.trust.v1.TrustService",grpc_type="unary",server="teleport-auth"} 9
+grpc_server_msg_sent_total{grpc_method="GetClusterAuditConfig",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="GetClusterNetworkingConfig",grpc_service="teleport.clusterconfig.v1.ClusterConfigService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="GetDatabases",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="GetInstallers",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="GetKubernetesClusters",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="GetLocks",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="GetSessionRecordingConfig",grpc_service="teleport.clusterconfig.v1.ClusterConfigService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="GetSnowflakeSessions",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="GetUIConfig",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="GetWebSessions",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="GetWebTokens",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="GetWindowsDesktopServices",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="GetWindowsDesktops",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="ListAppSessions",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="ListIntegrations",grpc_service="teleport.integration.v1.IntegrationService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="ListKubernetesWaitingContainers",grpc_service="teleport.kubewaitingcontainer.v1.KubeWaitingContainersService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="ListResources",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 5
+grpc_server_msg_sent_total{grpc_method="ListRoles",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="ListSAMLIdPServiceProviders",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="ListSAMLIdPSessions",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="ListUserGroups",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="ListUsers",grpc_service="teleport.users.v1.UsersService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_msg_sent_total{grpc_method="Ping",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 2
+grpc_server_msg_sent_total{grpc_method="WatchEvents",grpc_service="proto.AuthService",grpc_type="server_stream",server="teleport-auth"} 9
+# HELP grpc_server_started_total Total number of RPCs started on the server.
+# TYPE grpc_server_started_total counter
+grpc_server_started_total{grpc_method="GetApps",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="GetAuthPreference",grpc_service="teleport.clusterconfig.v1.ClusterConfigService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="GetCertAuthorities",grpc_service="teleport.trust.v1.TrustService",grpc_type="unary",server="teleport-auth"} 9
+grpc_server_started_total{grpc_method="GetClusterAuditConfig",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="GetClusterNetworkingConfig",grpc_service="teleport.clusterconfig.v1.ClusterConfigService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="GetDatabases",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="GetInstallers",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="GetKubernetesClusters",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="GetLocks",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="GetSessionRecordingConfig",grpc_service="teleport.clusterconfig.v1.ClusterConfigService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="GetSnowflakeSessions",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="GetUIConfig",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="GetWebSessions",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="GetWebTokens",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="GetWindowsDesktopServices",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="GetWindowsDesktops",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="ListAppSessions",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="ListIntegrations",grpc_service="teleport.integration.v1.IntegrationService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="ListKubernetesWaitingContainers",grpc_service="teleport.kubewaitingcontainer.v1.KubeWaitingContainersService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="ListResources",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 5
+grpc_server_started_total{grpc_method="ListRoles",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="ListSAMLIdPServiceProviders",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="ListSAMLIdPSessions",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="ListUserGroups",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="ListUsers",grpc_service="teleport.users.v1.UsersService",grpc_type="unary",server="teleport-auth"} 1
+grpc_server_started_total{grpc_method="Ping",grpc_service="proto.AuthService",grpc_type="unary",server="teleport-auth"} 2
+grpc_server_started_total{grpc_method="WatchEvents",grpc_service="proto.AuthService",grpc_type="server_stream",server="teleport-auth"} 2
+# HELP heartbeat_connections_received_total Number of times auth received a heartbeat connection
+# TYPE heartbeat_connections_received_total counter
+heartbeat_connections_received_total 0
+# HELP heartbeats_missed_total Number of heartbeats missed by auth server
+# TYPE heartbeats_missed_total gauge
+heartbeats_missed_total 0
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 3.27
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 1.048576e+06
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 26
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 2.39599616e+08
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.71346983649e+09
+# HELP process_state State of the teleport process: 0 - ok, 1 - recovering, 2 - degraded, 3 - starting
+# TYPE process_state gauge
+process_state 0
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 7.87822592e+09
+# HELP process_virtual_memory_max_bytes Maximum amount of virtual memory available in bytes.
+# TYPE process_virtual_memory_max_bytes gauge
+process_virtual_memory_max_bytes 1.8446744073709552e+19
+# HELP promhttp_metric_handler_requests_in_flight Current number of scrapes being served.
+# TYPE promhttp_metric_handler_requests_in_flight gauge
+promhttp_metric_handler_requests_in_flight 1
+# HELP promhttp_metric_handler_requests_total Total number of scrapes by HTTP status code.
+# TYPE promhttp_metric_handler_requests_total counter
+promhttp_metric_handler_requests_total{code="200"} 0
+promhttp_metric_handler_requests_total{code="500"} 0
+promhttp_metric_handler_requests_total{code="503"} 0
+# HELP proxy_connection_limit_exceeded_total Number of times the proxy connection limit was exceeded
+# TYPE proxy_connection_limit_exceeded_total counter
+proxy_connection_limit_exceeded_total 0
+# HELP proxy_missing_ssh_tunnels Number of missing SSH tunnels
+# TYPE proxy_missing_ssh_tunnels gauge
+proxy_missing_ssh_tunnels 0
+# HELP proxy_ssh_sessions_total Number of active sessions through this proxy
+# TYPE proxy_ssh_sessions_total gauge
+proxy_ssh_sessions_total 0
+# HELP rx Number of bytes received.
+# TYPE rx counter
+rx 0
+# HELP server_interactive_sessions_total Number of active sessions to this host
+# TYPE server_interactive_sessions_total gauge
+server_interactive_sessions_total 0
+# HELP teleport_audit_emit_events Number of audit events emitted
+# TYPE teleport_audit_emit_events counter
+teleport_audit_emit_events 0
+# HELP teleport_audit_emitted_event_sizes Size of single events emitted
+# TYPE teleport_audit_emitted_event_sizes histogram
+teleport_audit_emitted_event_sizes_bucket{le="64"} 0
+teleport_audit_emitted_event_sizes_bucket{le="203.18733465192952"} 0
+teleport_audit_emitted_event_sizes_bucket{le="645.079577546175"} 0
+teleport_audit_emitted_event_sizes_bucket{le="2047.9999999999995"} 0
+teleport_audit_emitted_event_sizes_bucket{le="6501.994708861743"} 0
+teleport_audit_emitted_event_sizes_bucket{le="20642.54648147759"} 0
+teleport_audit_emitted_event_sizes_bucket{le="65535.99999999996"} 0
+teleport_audit_emitted_event_sizes_bucket{le="208063.8306835757"} 0
+teleport_audit_emitted_event_sizes_bucket{le="660561.4874072828"} 0
+teleport_audit_emitted_event_sizes_bucket{le="2.0971519999999984e+06"} 0
+teleport_audit_emitted_event_sizes_bucket{le="6.658042581874422e+06"} 0
+teleport_audit_emitted_event_sizes_bucket{le="2.1137967597033046e+07"} 0
+teleport_audit_emitted_event_sizes_bucket{le="6.710886399999993e+07"} 0
+teleport_audit_emitted_event_sizes_bucket{le="2.130573626199814e+08"} 0
+teleport_audit_emitted_event_sizes_bucket{le="6.764149631050572e+08"} 0
+teleport_audit_emitted_event_sizes_bucket{le="2.1474836479999971e+09"} 0
+teleport_audit_emitted_event_sizes_bucket{le="+Inf"} 0
+teleport_audit_emitted_event_sizes_sum 0
+teleport_audit_emitted_event_sizes_count 0
+# HELP teleport_audit_queried_trimmed_events Number of events that were trimmed before being returned from a query
+# TYPE teleport_audit_queried_trimmed_events counter
+teleport_audit_queried_trimmed_events 0
+# HELP teleport_audit_stored_trimmed_events Number of events that were trimmed before being stored
+# TYPE teleport_audit_stored_trimmed_events counter
+teleport_audit_stored_trimmed_events 0
+# HELP teleport_backend_reads_total Number of individual items read from the backend
+# TYPE teleport_backend_reads_total counter
+teleport_backend_reads_total{component="backend"} 48
+teleport_backend_reads_total{component="cache"} 169
+# HELP teleport_backend_write_requests_failed_precondition_total Number of write requests that failed due to a precondition (existence, revision, value, etc)
+# TYPE teleport_backend_write_requests_failed_precondition_total counter
+teleport_backend_write_requests_failed_precondition_total{component="backend"} 5
+teleport_backend_write_requests_failed_precondition_total{component="cache"} 3
+# HELP teleport_backend_writes_total Number of individual items written to the backend
+# TYPE teleport_backend_writes_total counter
+teleport_backend_writes_total{component="backend"} 10
+teleport_backend_writes_total{component="cache"} 58
+# HELP teleport_build_info Provides build information of Teleport including gitref (git describe --long --tags), Go version, and Teleport version. The value of this gauge will always be 1.
+# TYPE teleport_build_info gauge
+teleport_build_info{gitref="v15.2.2-0-ga4cffd5",goversion="go1.21.9",version="15.2.2"} 1
+# HELP teleport_cache_events Number of events received by a Teleport service cache. Teleport's Auth Service, Proxy Service, and other services cache incoming events related to their service.
+# TYPE teleport_cache_events counter
+teleport_cache_events{cache_component="auth"} 8
+teleport_cache_events{cache_component="proxy"} 7
+# HELP teleport_connect_to_node_attempts_total Number of SSH connection attempts to a node. Use with `failed_connect_to_node_attempts_total` to get the failure rate.
+# TYPE teleport_connect_to_node_attempts_total counter
+teleport_connect_to_node_attempts_total 0
+# HELP teleport_enrolled_in_upgrades Number of instances enrolled in automatic upgrades
+# TYPE teleport_enrolled_in_upgrades gauge
+teleport_enrolled_in_upgrades 0
+# HELP teleport_incomplete_session_uploads_total Number of sessions not yet uploaded to auth
+# TYPE teleport_incomplete_session_uploads_total gauge
+teleport_incomplete_session_uploads_total 0
+# HELP teleport_kubernetes_server_in_flight_requests In-flight requests currently handled by the server.
+# TYPE teleport_kubernetes_server_in_flight_requests gauge
+teleport_kubernetes_server_in_flight_requests{component="kube_proxy"} 0
+# HELP teleport_migrations Migrations tracks for each migration if it is active (1) or not (0).
+# TYPE teleport_migrations gauge
+teleport_migrations{migration="db_client_authority"} 0
+teleport_migrations{migration="remote_clusters"} 0
+# HELP teleport_services Teleport services currently enabled and running
+# TYPE teleport_services gauge
+teleport_services{service_name="auth_service"} 1
+teleport_services{service_name="proxy_service"} 1
+# HELP teleport_total_instances Total teleport instances
+# TYPE teleport_total_instances gauge
+teleport_total_instances 0
+# HELP tx Number of bytes transmitted.
+# TYPE tx counter
+tx 0
+# HELP user_login_total Number of times there was a user login
+# TYPE user_login_total counter
+user_login_total 0
+# HELP user_max_concurrent_sessions_hit_total Number of times a user exceeded their max concurrent ssh connections
+# TYPE user_max_concurrent_sessions_hit_total counter
+user_max_concurrent_sessions_hit_total 0
+# HELP watcher_event_sizes Overall size of events emitted
+# TYPE watcher_event_sizes histogram
+watcher_event_sizes_bucket{le="0"} 0
+watcher_event_sizes_bucket{le="100"} 2
+watcher_event_sizes_bucket{le="200"} 5
+watcher_event_sizes_bucket{le="300"} 8
+watcher_event_sizes_bucket{le="400"} 8
+watcher_event_sizes_bucket{le="500"} 8
+watcher_event_sizes_bucket{le="600"} 8
+watcher_event_sizes_bucket{le="700"} 8
+watcher_event_sizes_bucket{le="800"} 8
+watcher_event_sizes_bucket{le="900"} 9
+watcher_event_sizes_bucket{le="1000"} 9
+watcher_event_sizes_bucket{le="1100"} 9
+watcher_event_sizes_bucket{le="1200"} 9
+watcher_event_sizes_bucket{le="1300"} 9
+watcher_event_sizes_bucket{le="1400"} 9
+watcher_event_sizes_bucket{le="1500"} 9
+watcher_event_sizes_bucket{le="1600"} 9
+watcher_event_sizes_bucket{le="1700"} 9
+watcher_event_sizes_bucket{le="1800"} 9
+watcher_event_sizes_bucket{le="1900"} 9
+watcher_event_sizes_bucket{le="+Inf"} 9
+watcher_event_sizes_sum 2143
+watcher_event_sizes_count 9
+# HELP watcher_events Per resources size of events emitted
+# TYPE watcher_events histogram
+watcher_events_bucket{resource="/auth_server",le="0"} 0
+watcher_events_bucket{resource="/auth_server",le="200"} 0
+watcher_events_bucket{resource="/auth_server",le="400"} 1
+watcher_events_bucket{resource="/auth_server",le="600"} 1
+watcher_events_bucket{resource="/auth_server",le="800"} 1
+watcher_events_bucket{resource="/auth_server",le="+Inf"} 1
+watcher_events_sum{resource="/auth_server"} 242
+watcher_events_count{resource="/auth_server"} 1
+watcher_events_bucket{resource="/cluster_audit_config",le="0"} 0
+watcher_events_bucket{resource="/cluster_audit_config",le="200"} 1
+watcher_events_bucket{resource="/cluster_audit_config",le="400"} 1
+watcher_events_bucket{resource="/cluster_audit_config",le="600"} 1
+watcher_events_bucket{resource="/cluster_audit_config",le="800"} 1
+watcher_events_bucket{resource="/cluster_audit_config",le="+Inf"} 1
+watcher_events_sum{resource="/cluster_audit_config"} 116
+watcher_events_count{resource="/cluster_audit_config"} 1
+watcher_events_bucket{resource="/cluster_auth_preference",le="0"} 0
+watcher_events_bucket{resource="/cluster_auth_preference",le="200"} 0
+watcher_events_bucket{resource="/cluster_auth_preference",le="400"} 1
+watcher_events_bucket{resource="/cluster_auth_preference",le="600"} 1
+watcher_events_bucket{resource="/cluster_auth_preference",le="800"} 1
+watcher_events_bucket{resource="/cluster_auth_preference",le="+Inf"} 1
+watcher_events_sum{resource="/cluster_auth_preference"} 209
+watcher_events_count{resource="/cluster_auth_preference"} 1
+watcher_events_bucket{resource="/cluster_networking_config",le="0"} 0
+watcher_events_bucket{resource="/cluster_networking_config",le="200"} 1
+watcher_events_bucket{resource="/cluster_networking_config",le="400"} 1
+watcher_events_bucket{resource="/cluster_networking_config",le="600"} 1
+watcher_events_bucket{resource="/cluster_networking_config",le="800"} 1
+watcher_events_bucket{resource="/cluster_networking_config",le="+Inf"} 1
+watcher_events_sum{resource="/cluster_networking_config"} 178
+watcher_events_count{resource="/cluster_networking_config"} 1
+watcher_events_bucket{resource="/namespace",le="0"} 0
+watcher_events_bucket{resource="/namespace",le="200"} 1
+watcher_events_bucket{resource="/namespace",le="400"} 1
+watcher_events_bucket{resource="/namespace",le="600"} 1
+watcher_events_bucket{resource="/namespace",le="800"} 1
+watcher_events_bucket{resource="/namespace",le="+Inf"} 1
+watcher_events_sum{resource="/namespace"} 89
+watcher_events_count{resource="/namespace"} 1
+watcher_events_bucket{resource="/proxy",le="0"} 0
+watcher_events_bucket{resource="/proxy",le="200"} 0
+watcher_events_bucket{resource="/proxy",le="400"} 1
+watcher_events_bucket{resource="/proxy",le="600"} 1
+watcher_events_bucket{resource="/proxy",le="800"} 1
+watcher_events_bucket{resource="/proxy",le="+Inf"} 1
+watcher_events_sum{resource="/proxy"} 232
+watcher_events_count{resource="/proxy"} 1
+watcher_events_bucket{resource="/session_recording_config",le="0"} 0
+watcher_events_bucket{resource="/session_recording_config",le="200"} 1
+watcher_events_bucket{resource="/session_recording_config",le="400"} 1
+watcher_events_bucket{resource="/session_recording_config",le="600"} 1
+watcher_events_bucket{resource="/session_recording_config",le="800"} 1
+watcher_events_bucket{resource="/session_recording_config",le="+Inf"} 1
+watcher_events_sum{resource="/session_recording_config"} 166
+watcher_events_count{resource="/session_recording_config"} 1
+watcher_events_bucket{resource="/watch_status",le="0"} 0
+watcher_events_bucket{resource="/watch_status",le="200"} 1
+watcher_events_bucket{resource="/watch_status",le="400"} 1
+watcher_events_bucket{resource="/watch_status",le="600"} 1
+watcher_events_bucket{resource="/watch_status",le="800"} 1
+watcher_events_bucket{resource="/watch_status",le="+Inf"} 2
+watcher_events_sum{resource="/watch_status"} 911
+watcher_events_count{resource="/watch_status"} 2
